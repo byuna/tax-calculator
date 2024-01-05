@@ -7,10 +7,14 @@ public class UserInterface {
 
     public UserInterface() {
         scanner = new Scanner(System.in);
-    };
+    }
 
     public void start() {
-        System.out.println("I am the User Interface.");
-        command = scanner.nextLine();
+
+        calc.setSalary(251634);
+        System.out.println("Salary: 251634");
+        System.out.println("Taxes owed: " + calc.calculateTotalTax());
+        System.out.println("Effective tax rate: " +
+                String.format("%,.2f", calc.calculateEffectiveTaxRate()) + "%.");
     }
 }
