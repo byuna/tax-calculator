@@ -64,7 +64,7 @@ public class TaxCalculator {
             if (this.salary - this.standardDeduction > this.upperBracket[i]) {
                 totalTaxOwed += (this.upperBracket[i] - this.lowerBracket[i]) * this.taxRates[i];
             } else {
-                totalTaxOwed += (this.salary - this.standardDeduction - this.lowerBracket[i]) * this.taxRates[i];
+                totalTaxOwed += ((this.salary - this.standardDeduction) - this.lowerBracket[i]) * this.taxRates[i];
             }
             i++;
         }
