@@ -22,4 +22,12 @@ public class UserInterface {
         System.out.println("Effective tax rate: " +
                 String.format("%,.2f", calc.calculateEffectiveTaxRate()) + "%.");
     }
+
+    public void printMenu() {
+        System.out.println("Select one of the following by typing in the number and pressing enter:");
+        System.out.println("1. Calculate Total Taxes Owed");
+        System.out.println("2. Calculate Remaining Tax Obligation. (Must know current taxes withheld)");
+    }
+
+
 }
